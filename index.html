@@ -58,7 +58,7 @@
           <div class="bg-gray-100 border rounded-xl p-6 shadow">
             <h3 class="text-lg font-semibold mb-3 text-gray-900">Start an Application</h3>
             <p class="text-gray-700 mb-4">Tell us a little about your deal and we’ll follow up.</p>
-            <form class="space-y-3" action="https://formspree.io/f/YOUR_ENDPOINT" method="POST">
+            <form class="space-y-3" action="mailto:your@email.com" method="POST" enctype="text/plain">
               <input required name="name" class="w-full px-3 py-2 border rounded" placeholder="Your name" />
               <input required name="contact" class="w-full px-3 py-2 border rounded" placeholder="Phone or email" />
               <select name="loanType" class="w-full px-3 py-2 border rounded">
@@ -67,7 +67,9 @@
                 <option>Fix & Flip</option>
                 <option>Rental</option>
               </select>
-              <button type="submit" class="w-full px-4 py-2 bg-sky-600 text-white rounded hover:bg-sky-700">Start Application</button>
+              <button type="submit" class="w-full px-4 py-2 bg-sky-600 text-white rounded hover:bg-sky-700">
+                Start Application
+              </button>
             </form>
           </div>
         </div>
@@ -141,7 +143,7 @@
       <p class="mt-3 text-gray-300">We’re available to talk through your project, underwriting, and timelines.</p>
 
       <div class="mt-6 space-y-3 text-sm">
-        <p>Email: <a class="text-sky-400" href="mailto:elaranllc@gmail.com">elaranllc@gmail.com</a></p>
+        <p>Email: <a class="text-sky-400" href="mailto:info@elaranllc.com">info@elaranllc.com</a></p>
         <p>Phone: <a class="text-sky-400" href="tel:8018109214">(801) 810-9214</a></p>
         <p>Business hours: Mon–Fri, 9am–5pm EST</p>
       </div>
@@ -150,7 +152,7 @@
     <div>
       <div class="bg-gray-100 p-6 rounded-xl shadow text-gray-800">
         <h4 class="text-lg font-semibold mb-3">Quick Contact</h4>
-        <form id="contactForm" class="space-y-3">
+        <form id="contactForm" class="space-y-3" action="mailto:your@email.com" method="POST" enctype="text/plain">
           <div>
             <label class="block text-sm text-gray-700">Your Name</label>
             <input required name="name" class="mt-1 w-full px-3 py-2 border rounded" />
@@ -172,7 +174,9 @@
           </div>
 
           <div class="flex items-center justify-between">
-            <button type="submit" class="px-4 py-2 bg-sky-600 text-white rounded hover:bg-sky-700">Send Email</button>
+            <button type="submit" class="px-4 py-2 bg-sky-600 text-white rounded hover:bg-sky-700">
+              Send Email
+            </button>
             <p class="text-xs text-gray-500">We reply quickly — usually same business day.</p>
           </div>
         </form>
@@ -197,7 +201,7 @@
       "Message:\n" + message
     );
 
-    window.location.href = "mailto:elaranllc@gmail.com?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:info@elaranllc.com?subject=" + subject + "&body=" + body;
   });
 </script>
 
@@ -211,7 +215,7 @@
         <div>
           <div>&copy; <span id="yr"></span> Elaran LLC</div>
           <div class="mt-1">
-            <a class="hover:text-sky-400" href="mailto:elaranllc@gmail.com">elaranllc@gmail.com</a>
+            <a class="hover:text-sky-400" href="mailto:info@elaranllc.com">info@elaranllc.com</a>
             <span class="mx-2">|</span>
             <a class="hover:text-sky-400" href="tel:8018109214">(801) 810-9214</a>
           </div>
