@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Elaran LLC</title>
+</head>
+<body style="font-family: Arial, sans-serif; color:#1a1a1a; font-size:15px; line-height:1.6; margin:0; padding:20px; background-color:#f9f9f9;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px; margin:0 auto; background:#ffffff; padding:30px; border-radius:8px;">
+    <tr>
+      <td style="text-align:center; padding-bottom:20px;">
+        <!-- Logo -->
+        <img src="{{logo_url}}" alt="Elaran LLC" style="max-width:180px; height:auto; display:block; margin:0 auto;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>Hello {{borrower_name}},</p>
+
+        <!-- Context -->
+        <p>Thank you for choosing Elaran for your lending needs. We are contacting you ahead of your first scheduled payment to collect your bank account details. Adding your payment method now will prevent any late or missed payments.</p>
+
+        <!-- Loan details -->
+        <p><strong>Loan details:</strong></p>
+        <ul style="margin:0 0 20px 20px; padding:0;">
+          <li><strong>Property:</strong> {{property_address}}</li>
+          <li><strong>Borrower:</strong> {{borrower_name}}</li>
+        </ul>
+
+        <!-- Payment details -->
+        <p><strong>Payment details:</strong></p>
+        <ul style="margin:0 0 30px 20px; padding:0;">
+          <li><strong>Amount:</strong> {{payment_amount}}</li>
+          <li><strong>Type:</strong> {{payment_type}}</li>
+          <li><strong>Schedule:</strong> {{payment_schedule}}</li>
+        </ul>
+
+        <!-- Button -->
+        <p>For simplicity and security, we use Stripe for payment processing. Please log in with your email using the button below and add your payment method:</p>
+        <p style="text-align:center; margin:30px 0;">
+          <a href="{{stripe_link}}"
+             role="button" aria-label="Add your payment method in Stripe"
+             style="background-color:#002147; color:#ffffff; padding:12px 24px; 
+                    text-decoration:none; border-radius:6px; font-weight:bold; 
+                    display:inline-block; font-size:16px;">
+             Add Your Payment Method
+          </a>
+        </p>
+
+        <p>If you have any questions about the setup or the payment schedule, don’t hesitate to reach out—we’re here to help!</p>
+
+        <p>We appreciate the opportunity to work with you.</p>
+      </td>
+    </tr>
+    <!-- Footer -->
+    <tr>
+      <td style="padding-top:30px; border-top:1px solid #ddd; text-align:center; font-size:13px; color:#666;">
+        <p style="margin:5px 0;"><strong>{{company_name}}</strong></p>
+        <p style="margin:5px 0;">📞 {{company_phone}} &nbsp; | &nbsp; ✉️ <a href="mailto:{{company_email}}" style="color:#002147; text-decoration:none;">{{company_email}}</a></p>
+        <p style="margin:5px 0;">🌐 <a href="{{company_website}}" style="color:#002147; text-decoration:none;">{{company_website}}</a></p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
